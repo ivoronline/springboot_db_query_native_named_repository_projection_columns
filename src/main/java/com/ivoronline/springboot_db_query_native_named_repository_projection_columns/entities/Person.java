@@ -16,7 +16,7 @@ import javax.persistence.SqlResultSetMapping;
   }
 )
 @NamedNativeQuery(
-  name             = "Person.selectPersonByNameAge",
+  name             = "Person.selectPerson",
   query            = "SELECT id, name, age, name || ' is ' || age AS greet FROM Person WHERE name = :name",
   resultSetMapping = "PersonMapping"
 )
